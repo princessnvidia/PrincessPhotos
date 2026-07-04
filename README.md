@@ -4,6 +4,12 @@ A modern photo management application for Linux inspired by Apple Photos.
 
 PrincessPhotos is designed to make browsing, organizing and enjoying your photo library simple, elegant and fast.
 
+## Demo
+
+<p align="center">
+  <img src="docs/demo.gif" alt="PrincessPhotos Demo" width="100%">
+</p>
+
 ---
 
 ## Features
