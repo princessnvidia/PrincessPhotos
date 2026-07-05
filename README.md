@@ -1,10 +1,10 @@
 # PrincessPhotos 📸
 
-A modern photo management application for Linux inspired by Apple Photos.
+Modern photo management application for Linux focused on **speed, elegance and large photo libraries**.
 
-PrincessPhotos is designed to make browsing, organizing and enjoying your photo library simple, elegant and fast.
+PrincessPhotos is an experimental desktop application designed to make browsing, organizing and enjoying your photos effortless while remaining lightweight and fully open source.
 
-## Demo
+---
 
 <p align="center">
   <img src="docs/demo.gif" alt="PrincessPhotos Demo" width="100%">
@@ -12,9 +12,9 @@ PrincessPhotos is designed to make browsing, organizing and enjoying your photo 
 
 ---
 
-## Features
+# Features
 
-### 🖼 Photo Library
+## 🖼 Photo Library
 
 - Import photo folders
 - Automatic library organization
@@ -23,15 +23,15 @@ PrincessPhotos is designed to make browsing, organizing and enjoying your photo 
 - Recently imported
 - Instant search
 
-### 🔍 Photo Viewer
+## 🔍 Photo Viewer
 
-- Fullscreen mode
+- Fullscreen viewing
 - Smooth zoom
 - Pan & navigation
-- Slideshow
+- Slideshow mode
 - Keyboard shortcuts
 
-### 📂 Organization
+## 📂 Organization
 
 - Drag & Drop
 - Collections
@@ -39,15 +39,15 @@ PrincessPhotos is designed to make browsing, organizing and enjoying your photo 
 - Ratings
 - Duplicate detection *(planned)*
 
-### 📸 Metadata
+## 📸 Metadata
 
 - EXIF information
 - Camera model
 - Lens information
-- Date & location
+- Capture date
 - File properties
 
-### ✨ Editing
+## ✨ Editing
 
 - Crop
 - Rotate
@@ -57,34 +57,77 @@ PrincessPhotos is designed to make browsing, organizing and enjoying your photo 
 - Saturation
 - Non-destructive editing *(planned)*
 
-### 🚀 Performance
+## 🚀 Performance
 
 - Fast thumbnail generation
-- Lazy image loading
+- Lazy loading
 - GPU accelerated rendering
 - Large library support
 
 ---
 
-## Roadmap
+# Tech Stack
 
-- [ ] Face recognition
-- [ ] AI photo search
-- [ ] RAW support
-- [ ] Cloud synchronization
-- [ ] Video support
-- [ ] Timeline view
-- [ ] Map view
-- [ ] Batch editing
-- [ ] Duplicate finder
+- Python
+- PySide6
+- Qt6
 
 ---
 
-## Installation
+# Application Architecture
+
+```
+Photo Library
+      │
+      ▼
+Thumbnail Cache
+      │
+      ▼
+Photo Viewer
+      │
+      ▼
+Metadata Engine
+      │
+      ▼
+Editing Pipeline
+      │
+      ▼
+Export
+```
+
+---
+
+# Roadmap
+
+## Library
+
+- [ ] Timeline view
+- [ ] Map view
+- [ ] Smart albums
+- [ ] Duplicate finder
+
+## Editing
+
+- [ ] RAW support
+- [ ] Batch editing
+- [ ] Non-destructive editing
+
+## Intelligence
+
+- [ ] Face recognition
+- [ ] AI-powered photo search
+
+## Synchronization
+
+- [ ] Cloud synchronization
+- [ ] Video support
+
+---
+
+# Installation
 
 ```bash
 git clone https://github.com/princessnvidia/PrincessPhotos.git
-
 cd PrincessPhotos
 
 pip install -r requirements.txt
@@ -94,26 +137,22 @@ python princessphotos.py
 
 ---
 
-## Screenshots
+# Philosophy
 
-Coming soon.
+PrincessPhotos explores what a modern Linux photo manager can be.
 
----
+The project focuses on fast navigation, clean visual design and efficient organization while avoiding unnecessary complexity. It aims to provide a smooth experience for photographers and everyday users alike, with an interface that stays responsive even when managing large collections.
 
-## Technologies
-
-- Python
-- PySide6
-- Qt6
+The long-term vision is to combine elegant desktop workflows with intelligent features such as semantic search, face recognition and non-destructive editing, while remaining fully open source.
 
 ---
 
-## Philosophy
+# Status
 
-PrincessPhotos aims to provide a beautiful, modern and lightweight photo management experience for Linux users while remaining fully open source.
+🚧 Active Development
 
 ---
 
-## License
+# License
 
 MIT License
